@@ -48,3 +48,4 @@ const readData = (data: Array<IFetchData>) => {
 };
 
 export default fetcher;
+export { fetcher, readData };
