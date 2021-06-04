@@ -13,7 +13,7 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import { useMediaQuery } from 'react-responsive';
 
-import { ICourse } from '../types';
+import { ICourse, IProject } from '../types';
 
 // remove duplicated bottom border in each row
 const useRowStyles = makeStyles({
@@ -87,7 +87,7 @@ const Row: React.FC<RowProps> = ({ course }) => {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {course.projects.map((project) => (
+                  {course.projects.map((project: IProject) => (
                     <TableRow key={project.project}>
                       <TableCell component="th" scope="row">
                         <Typography variant="body1" gutterBottom>

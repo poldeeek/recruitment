@@ -21,10 +21,10 @@ export interface IFetchData {
 export interface ICourse {
   course: string;
   openedLessonsCount: number;
-  projects: Array<ProjectType>;
+  projects: Array<IProject>;
 }
 
-export type ProjectType = {
+export interface IProject {
   project: string;
   completedLessonsCount: number;
-};
+}

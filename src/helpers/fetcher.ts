@@ -1,4 +1,4 @@
-import { IFetchData, ICourse, ProjectType } from '../types';
+import { IFetchData, ICourse, IProject } from '../types';
 
 const fetcher = (url: string) => {
   return fetch(url)
@@ -11,7 +11,9 @@ const readData = (data: Array<IFetchData>) => {
   let myData: Array<ICourse> = [];
 
   data.forEach((project: IFetchData) => {
-    const indexOfStevie = myData.findIndex((i) => i.course === project.course);
+    const indexOfStevie = myData.findIndex(
+      (c: ICourse) => c.course === project.course
+    );
     if (indexOfStevie === -1) {
       myData.push({
         course: project.course,
@@ -28,7 +30,7 @@ const readData = (data: Array<IFetchData>) => {
         project.openedLessonsCount
       );
       const secondIndex = myData[indexOfStevie].projects.findIndex(
-        (j: ProjectType) => j.project === project.project
+        (j: IProject) => j.project === project.project
       );
       if (secondIndex === -1) {
         myData[indexOfStevie].projects.push({

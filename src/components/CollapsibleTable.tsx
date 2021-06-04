@@ -11,12 +11,12 @@ import Row from './Row';
 
 import { ICourse } from '../types';
 
-interface ICollapsibleTable {
-  courses: Array<ICourse>;
+interface ICollapsibleTableProps {
+  courses: Array<ICourse> | undefined;
 }
 
-const CollapsibleTable: React.FC<ICollapsibleTable> = ({ courses }) => {
-  if (!courses) {
+const CollapsibleTable: React.FC<ICollapsibleTableProps> = ({ courses }) => {
+  if (!courses || courses.length === 0) {
     return <div>No courses</div>;
   }
 
