@@ -8,7 +8,9 @@
     "build": "webpack --config webpack/webpack.config.js --env env=prod",
     "test": "jest",
     "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
-    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/poldeeek/recruitment_v2/issues"
   },
-  "homepage": "https://github.com/poldeeek/recruitment_v2#readme",
+  "homepage": "http://poldeeek.github.io/recruitment_v2",
   "resolutions": {
     "styled-components": "^5"
   },
@@ -63,6 +65,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^3.2.0",
     "html-webpack-plugin": "^5.3.1",
     "jest": "^27.0.4",
     "prettier": "^2.3.0",
