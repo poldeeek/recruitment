@@ -65,7 +65,6 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "html-webpack-plugin": "^5.3.1",
     "jest": "^27.0.4",
-    "jest-fetch-mock": "^3.0.3",
     "prettier": "^2.3.0",
     "react-refresh": "^0.10.0",
     "style-loader": "^2.0.0",
