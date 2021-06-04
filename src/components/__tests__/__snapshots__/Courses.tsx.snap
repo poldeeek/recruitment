@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basic redner 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-dlnjwi fNuxOi"
+    />
+  </div>
+</body>
+`;

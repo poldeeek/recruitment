@@ -2,7 +2,6 @@ import styled, { keyframes } from 'styled-components';
 import useSWR from 'swr';
 
 import fetcher from '../utils/fetcher';
-import { ICourse } from '../types';
 
 import CollapsibleTable from './CollapsibleTable';
 
