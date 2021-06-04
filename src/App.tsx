@@ -18,7 +18,7 @@ export default App;
 const AppContainer = styled.div``;
 
 const Header = styled.header`
-  height: 5rem;
+  height: 8rem;
   padding: 0 1rem;
   background-color: orange;
   display: flex;

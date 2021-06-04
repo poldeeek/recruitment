@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import useSWR from 'swr';
 
 import fetcher from '../helpers/fetcher';
@@ -18,6 +18,7 @@ const Courses: React.FC = () => {
       </CoursesContainer>
     );
   }
+  if (!data) return <Loader />;
 
   return (
     <CoursesContainer>
@@ -39,4 +40,24 @@ const CoursesContainer = styled.div`
 
 const Error = styled.h1`
   color: red;
+`;
+
+const spin = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+const Loader = styled.div`
+  margin: 5rem auto;
+  border: 1.2rem solid #f3f3f3;
+  border-top: 1.2rem solid orange;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  animation: ${spin} 2s linear infinite;
 `;
