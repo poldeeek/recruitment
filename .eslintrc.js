@@ -21,6 +21,7 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
+    'import/no-named-as-default': 0,
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
     '@typescript-eslint/no-var-requires': 'off',
@@ -29,4 +30,4 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
   },
-}
+};
