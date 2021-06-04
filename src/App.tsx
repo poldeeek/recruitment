@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import Courses from './components/courses';
+import Courses from './components/Courses';
 
 const App: React.FC = () => {
   return (
@@ -25,10 +25,11 @@ const Header = styled.header`
   align-items: center;
 
   @media (min-width: 992px) {
-    padding: 0 20rem;
+    padding: 0 25rem;
   }
 `;
 
 const Title = styled.h1`
   margin: 0;
+  font-size: 2.8rem;
 `;
