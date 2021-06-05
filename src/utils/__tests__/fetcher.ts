@@ -1,32 +1,36 @@
 import _ from 'lodash';
 import { fetcher, readData } from '../fetcher';
 
+import 'whatwg-fetch';
+import { rest } from 'msw';
+import { setupServer } from 'msw/node';
+
+const server = setupServer(
+  rest.get('http://some-api.pl', (_req, res, ctx) => {
+    return res(ctx.status(200), ctx.json(data));
+  })
+);
+
+beforeAll(() => server.listen());
+afterAll(() => server.close());
+afterEach(() => server.resetHandlers());
+
 describe('Fetcher func', () => {
-  it('Success fetch', async () => {
-    const mockSuccessResponse = data;
-    const mockJsonPromise = Promise.resolve(mockSuccessResponse);
-    const mockFetchPromise = Promise.resolve({
-      json: () => mockJsonPromise,
-    });
-    const globalRef = global;
-
-    globalRef.fetch = jest.fn().mockImplementation(() => mockFetchPromise);
-
-    const response = await fetcher('https://some-url.pl');
-
-    expect(
-      _.isEqual(JSON.stringify(response), JSON.stringify(readData(data)))
-    ).toBe(true);
+  it('success', async () => {
+    const result = await fetcher('http://some-api.pl');
+    expect(result).toEqual(readData(data));
   });
 
-  it('Error fetch', async () => {
-    const mockFetchPromise = Promise.reject('Some error');
-    const globalRef = global;
+  it('failure', async () => {
+    server.use(
+      rest.get('http://some-api.pl', (_req, res, ctx) => {
+        return res(ctx.status(404));
+      })
+    );
 
-    globalRef.fetch = jest.fn().mockImplementation(() => mockFetchPromise);
-
-    const response = await fetcher('https://some-url.pl');
-    expect(response).toEqual('Some error');
+    await expect(fetcher('http://some-api.pl')).rejects.toThrowError(
+      'Some error.'
+    );
   });
 });
 
@@ -57,6 +61,28 @@ describe('Read data func', () => {
     expect(_.isEqual(result, [])).toBe(true);
   });
 });
+
+/* Old fetcher func test with mocking the global fetch func */
+/*
+describe('Fetcher func', () => {
+  it('Success fetch', async () => {
+    const mockSuccessResponse = data;
+    const mockJsonPromise = Promise.resolve(mockSuccessResponse);
+    const mockFetchPromise = Promise.resolve({
+      json: () => mockJsonPromise,
+    });
+    const globalRef = global;
+
+    globalRef.fetch = jest.fn().mockImplementation(() => mockFetchPromise);
+
+    const response = await fetcher('https://some-url.pl');
+
+    expect(
+      _.isEqual(JSON.stringify(response), JSON.stringify(readData(data)))
+    ).toBe(true);
+  });
+});
+*/
 
 const data = [
   {
