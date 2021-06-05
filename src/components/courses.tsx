@@ -19,7 +19,7 @@ const Courses: React.FC = () => {
     );
   }
 
-  if (!data) return <Loader />;
+  if (!data) return <Loader title="loader" />;
 
   return (
     <CoursesContainer>
