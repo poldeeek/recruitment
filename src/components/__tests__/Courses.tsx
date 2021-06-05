@@ -54,6 +54,7 @@ test('handles errors', async () => {
   );
   const element = await component.findByText(/Something went wrong/i);
   expect(element).toBeInTheDocument();
+  expect(component.baseElement).toMatchSnapshot();
 });
 
 /*******************************/
