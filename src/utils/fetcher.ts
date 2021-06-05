@@ -4,8 +4,8 @@ const fetcher = (url: string) => {
   return fetch(url)
     .then((response) => response.json())
     .then((data: Array<IFetchData>) => readData(data))
-    .catch(() => {
-      throw new Error('Some error.');
+    .catch((err) => {
+      throw new Error(err);
     });
 };
 

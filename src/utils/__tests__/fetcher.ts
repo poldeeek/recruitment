@@ -28,9 +28,7 @@ describe('Fetcher func', () => {
       })
     );
 
-    await expect(fetcher('http://some-api.pl')).rejects.toThrowError(
-      'Some error.'
-    );
+    await expect(fetcher('http://some-api.pl')).rejects.toThrowError();
   });
 });
 
