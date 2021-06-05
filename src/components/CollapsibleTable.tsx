@@ -39,9 +39,10 @@ const CollapsibleTable: React.FC<ICollapsibleTableProps> = ({ courses }) => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {courses.map((course: ICourse) => (
-            <Row key={course.course} course={course} />
-          ))}
+          {courses &&
+            courses.map((course: ICourse) => (
+              <Row key={course.course} course={course} />
+            ))}
         </TableBody>
       </Table>
     </TableContainer>
