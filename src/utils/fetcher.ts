@@ -3,7 +3,10 @@ import { IFetchData, ICourse, IProject } from '../types';
 const fetcher = (url: string) => {
   return fetch(url)
     .then((response) => response.json())
-    .then((data: Array<IFetchData>) => readData(data));
+    .then((data: Array<IFetchData>) => readData(data))
+    .catch((err) => {
+      return err;
+    });
 };
 
 const readData = (data: Array<IFetchData>) => {

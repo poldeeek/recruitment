@@ -2,7 +2,7 @@ import _ from 'lodash';
 import { fetcher, readData } from '../fetcher';
 
 describe('Fetcher func', () => {
-  it('Basic', async () => {
+  it('Success fetch', async () => {
     const mockSuccessResponse = data;
     const mockJsonPromise = Promise.resolve(mockSuccessResponse);
     const mockFetchPromise = Promise.resolve({
@@ -17,6 +17,16 @@ describe('Fetcher func', () => {
     expect(
       _.isEqual(JSON.stringify(response), JSON.stringify(readData(data)))
     ).toBe(true);
+  });
+
+  it('Error fetch', async () => {
+    const mockFetchPromise = Promise.reject('Some error');
+    const globalRef = global;
+
+    globalRef.fetch = jest.fn().mockImplementation(() => mockFetchPromise);
+
+    const response = await fetcher('https://some-url.pl');
+    expect(response).toEqual('Some error');
   });
 });
 
