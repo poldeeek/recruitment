@@ -1,11 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Basic redner 1`] = `
+exports[`Basic render, fetch success 1`] = `
 <body>
   <div>
     <div
-      class="sc-dlnjwi fNuxOi"
-    />
+      class="sc-bdnxRM jBnfoK"
+    >
+      <div>
+        CollapsibleTable
+      </div>
+    </div>
   </div>
 </body>
 `;
