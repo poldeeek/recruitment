@@ -11,7 +11,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Typography from '@material-ui/core/Typography';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
-import { useMediaQuery } from 'react-responsive';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import { ICourse, IProject } from '../types';
 
@@ -32,9 +32,7 @@ const Row: React.FC<RowProps> = ({ course }) => {
   const [open, setOpen] = useState(false);
   const classes = useRowStyles();
 
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-device-width: 992px)',
-  });
+  const isDesktopOrLaptop = useMediaQuery('(min-width:992px)');
 
   const boxMargin = isDesktopOrLaptop ? 8 : 1;
 
@@ -45,7 +43,8 @@ const Row: React.FC<RowProps> = ({ course }) => {
           <IconButton
             aria-label="expand row"
             size="small"
-            onClick={() => setOpen(!open)}>
+            onClick={() => setOpen(!open)}
+            role="button">
             {open ? (
               <KeyboardArrowUpIcon fontSize="large" />
             ) : (
@@ -87,20 +86,21 @@ const Row: React.FC<RowProps> = ({ course }) => {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {course.projects.map((project: IProject) => (
-                    <TableRow key={project.project}>
-                      <TableCell component="th" scope="row">
-                        <Typography variant="body1" gutterBottom>
-                          {project.project}
-                        </Typography>
-                      </TableCell>
-                      <TableCell align="right">
-                        <Typography variant="body1" gutterBottom>
-                          {project.completedLessonsCount}
-                        </Typography>
-                      </TableCell>
-                    </TableRow>
-                  ))}
+                  {course.projects &&
+                    course.projects.map((project: IProject) => (
+                      <TableRow key={project.project}>
+                        <TableCell component="th" scope="row">
+                          <Typography variant="body1" gutterBottom>
+                            {project.project}
+                          </Typography>
+                        </TableCell>
+                        <TableCell align="right">
+                          <Typography variant="body1" gutterBottom>
+                            {project.completedLessonsCount}
+                          </Typography>
+                        </TableCell>
+                      </TableRow>
+                    ))}
                 </TableBody>
               </Table>
             </Box>
