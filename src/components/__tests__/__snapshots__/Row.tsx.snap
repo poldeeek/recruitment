@@ -1,0 +1,377 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`990px Basic render 1`] = `
+<body>
+  <div>
+    <table>
+      <tbody>
+        <tr
+          class="MuiTableRow-root makeStyles-root-1"
+        >
+          <td
+            class="MuiTableCell-root"
+          >
+            <button
+              aria-label="expand row"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+              role="button"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </td>
+          <th
+            class="MuiTableCell-root"
+            role="cell"
+            scope="row"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5"
+            >
+              Course1
+            </h5>
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-alignRight"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5"
+            >
+              3
+            </h5>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root"
+            colspan="6"
+            style="padding-bottom: 0px; padding-top: 0px;"
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+`;
+
+exports[`1200px Basic render 1`] = `
+<body>
+  <div>
+    <table>
+      <tbody>
+        <tr
+          class="MuiTableRow-root makeStyles-root-2"
+        >
+          <td
+            class="MuiTableCell-root"
+          >
+            <button
+              aria-label="expand row"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+              role="button"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </td>
+          <th
+            class="MuiTableCell-root"
+            role="cell"
+            scope="row"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5"
+            >
+              Course1
+            </h5>
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-alignRight"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5"
+            >
+              3
+            </h5>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root"
+            colspan="6"
+            style="padding-bottom: 0px; padding-top: 0px;"
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+`;
+
+exports[`Basic render 1`] = `
+<body>
+  <div>
+    <table>
+      <tbody>
+        <tr
+          class="MuiTableRow-root makeStyles-root-1"
+        >
+          <td
+            class="MuiTableCell-root"
+          >
+            <button
+              aria-label="expand row"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+              role="button"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </td>
+          <th
+            class="MuiTableCell-root"
+            role="cell"
+            scope="row"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5"
+            >
+              Course1
+            </h5>
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-alignRight"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5"
+            >
+              3
+            </h5>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root"
+            colspan="6"
+            style="padding-bottom: 0px; padding-top: 0px;"
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+`;
+
+exports[`Show projects 1`] = `
+<body>
+  <div>
+    <table>
+      <tbody>
+        <tr
+          class="MuiTableRow-root makeStyles-root-3"
+        >
+          <td
+            class="MuiTableCell-root"
+          >
+            <button
+              aria-label="expand row"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+              role="button"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </td>
+          <th
+            class="MuiTableCell-root"
+            role="cell"
+            scope="row"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5"
+            >
+              Course1
+            </h5>
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-alignRight"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5"
+            >
+              3
+            </h5>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root"
+            colspan="6"
+            style="padding-bottom: 0px; padding-top: 0px;"
+          >
+            <div
+              class="MuiCollapse-container"
+              style="min-height: 0px; height: 0px; transition-duration: 0ms;"
+            >
+              <div
+                class="MuiCollapse-wrapper"
+              >
+                <div
+                  class="MuiCollapse-wrapperInner"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-4"
+                  >
+                    <h5
+                      class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                    >
+                      Projects
+                    </h5>
+                    <table
+                      aria-label="purchases"
+                      class="MuiTable-root"
+                    >
+                      <thead
+                        class="MuiTableHead-root"
+                      >
+                        <tr
+                          class="MuiTableRow-root MuiTableRow-head"
+                        >
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall"
+                            scope="col"
+                          >
+                            <h6
+                              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+                            >
+                              Name
+                            </h6>
+                          </th>
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight MuiTableCell-sizeSmall"
+                            scope="col"
+                          >
+                            <h6
+                              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+                            >
+                              Completed Lessons
+                            </h6>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody
+                        class="MuiTableBody-root"
+                      >
+                        <tr
+                          class="MuiTableRow-root"
+                        >
+                          <th
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall"
+                            role="cell"
+                            scope="row"
+                          >
+                            <p
+                              class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
+                            >
+                              Poroject1
+                            </p>
+                          </th>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight MuiTableCell-sizeSmall"
+                          >
+                            <p
+                              class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
+                            >
+                              3
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+`;

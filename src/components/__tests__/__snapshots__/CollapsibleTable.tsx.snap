@@ -45,8 +45,16 @@ exports[`Basic render 1`] = `
         <tbody
           class="MuiTableBody-root"
         >
-          <tr />
-          <tr />
+          <tr>
+            <td>
+              Row
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Row
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
