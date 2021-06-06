@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basic render 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiPaper-root MuiTableContainer-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <table
+        aria-label="collapsible table"
+        class="MuiTable-root"
+      >
+        <thead
+          class="MuiTableHead-root"
+        >
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
+          >
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            />
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              <h4
+                class="MuiTypography-root MuiTypography-h4"
+              >
+                Course Name
+              </h4>
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+              scope="col"
+            >
+              <h4
+                class="MuiTypography-root MuiTypography-h4"
+              >
+                Opened Lessons
+              </h4>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        >
+          <tr />
+          <tr />
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Basic render, no courses 1`] = `
+<body>
+  <div>
+    <div>
+      No courses
+    </div>
+  </div>
+</body>
+`;
