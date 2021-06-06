@@ -2,7 +2,7 @@
 
 Live: https://poldeeek.github.io/recruitment_v2/
 
-Simple page for displaying data from REST API url. Create from scratch with:
+Simple page for displaying data from REST API url. Created from scratch with:
 
 - React.js v17.0.2
 - Styled-components v5.3.0
