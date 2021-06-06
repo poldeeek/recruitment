@@ -4,7 +4,11 @@ import { render } from '@testing-library/react';
 import { ICourse } from '../../types';
 
 jest.mock('../Row.tsx', () => {
-  const Row: React.FC<ICourse> = () => <tr></tr>;
+  const Row: React.FC<ICourse> = () => (
+    <tr>
+      <td>Row</td>
+    </tr>
+  );
   return Row;
 });
 
