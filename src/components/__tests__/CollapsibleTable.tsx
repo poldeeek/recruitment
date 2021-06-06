@@ -6,7 +6,7 @@ import { ICourse } from '../../types';
 jest.mock('../Row.tsx', () => {
   const Row: React.FC<ICourse> = () => (
     <tr>
-      <td>Row</td>
+      <td>Course</td>
     </tr>
   );
   return Row;

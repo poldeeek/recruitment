@@ -47,12 +47,12 @@ exports[`Basic render 1`] = `
         >
           <tr>
             <td>
-              Row
+              Course
             </td>
           </tr>
           <tr>
             <td>
-              Row
+              Course
             </td>
           </tr>
         </tbody>
