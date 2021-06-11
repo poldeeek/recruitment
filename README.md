@@ -1,6 +1,6 @@
 ﻿# recruitment_v2
 
-Live: https://poldeeek.github.io/recruitment_v2/
+Live: https://poldeeek.github.io/recruitment_1/
 
 Simple page for displaying data from REST API url. Created from scratch with:
 
