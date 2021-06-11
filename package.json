@@ -1,5 +1,5 @@
 {
-  "name": "recruitment_v2",
+  "name": "recruitment_1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/poldeeek/recruitment_v2.git"
+    "url": "git+https://github.com/poldeeek/recruitment_1.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/poldeeek/recruitment_v2/issues"
+    "url": "https://github.com/poldeeek/recruitment_1/issues"
   },
-  "homepage": "http://poldeeek.github.io/recruitment_v2",
+  "homepage": "http://poldeeek.github.io/recruitment_1",
   "resolutions": {
     "styled-components": "^5"
   },
